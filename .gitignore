@@ -1,3 +1,4 @@
+#YEOMAN
 node_modules/
 .sass-cache
 build/
@@ -7,4 +8,7 @@ zip/
 scss/
 bower_components/
 .project
-.gitignore
+
+#TEMPFiles
+*~
+
