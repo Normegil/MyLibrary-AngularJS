@@ -1,6 +1,10 @@
 node_modules/
-bower_components/
-*.log
-
+.sass-cache
 build/
-dist/
+.DS_Store
+npm-debug.log
+zip/
+scss/
+bower_components/
+.project
+.gitignore
