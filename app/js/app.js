@@ -4,7 +4,7 @@
 ==================================================================*/
 /*global angular*/
 
-var app = angular.module('myLibraryAngularJs', ["ngCookies", "ngResource", "ngSanitize", "ngRoute", "ngAnimate", "ui.utils", "ui.router", "ngGrid"]);
+var app = angular.module('myLibraryAngularJs', ["ngCookies", "ngResource", "ngSanitize", "ngRoute", "ngAnimate", "ui.utils", "ui.router", "ngGrid", "ngMaterial"]);
 
 
 app.config(['$routeProvider', '$locationProvider', '$httpProvider', function ($routeProvider, $locationProvider, $httpProvider) {

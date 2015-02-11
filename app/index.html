@@ -4,21 +4,22 @@
   
   <head>
     <meta charset="utf-8">
-    <title>myLibraryAngularJs</title>
+    <title>My Library</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1" />
     <link rel="stylesheet" href="bower/_bower.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
-  <body ng-app="myLibraryAngularJs">
-    <h1>Welcome to Boom Angular.js Generator!</h1>
-
+  <body layout="column" ng-app="myLibraryAngularJs">
+	<md-toolbar layout="row" layout-align="center center">
+      <h1>My Library</h1>
+    </md-toolbar>
     
     <div ng-view></div>
     
 
     <script type="text/javascript" src="bower/_bower.js"></script>
     <script type="text/javascript" src="js/all.js"></script>
-    <!-- endbuild -->
+	<!-- endbuild -->
   </body>
 </html>
