@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>My Library</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1"/>
     <link rel="stylesheet" href="bower/_bower.css">
     <link rel="stylesheet" href="css/styles.css">
-  </head>
+</head>
 
-  <body layout="column" ng-app="myLibraryAngularJs">
-	<md-toolbar layout="row" layout-align="center center">
-      <h1>My Library</h1>
-    </md-toolbar>
-    
-    <div ng-view></div>
-    
+<body layout="row" ng-app="myLibraryAngularJs" class="mylibrary">
+<md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2" layout="column" layout-align="space-between" md-is-locked-open="true" layout-padding>
+    <div>
+        <div layout="row" layout-align="center center" class="mainLogo">
+            <p>Logo</p>
+            <h1>My Library</h1>
+        </div>
+        <div layout="row">
+            <input type="text" value="Autocomplete"/>
+            <md-button>Search</md-button>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a>News</a>
+                </li>
+                <li>
+                    <a>Browse</a>
+                    <ul>
+                        <li>
+                            <a>BD</a>
+                        </li>
+                        <li>
+                            <a>Comics</a>
+                        </li>
+                        <li>
+                            <a>Manga</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div layout="row" layout-align="space-around">
+        <md-button>Connect</md-button>
+        <md-button>inscription</md-button>
+    </div>
+</md-sidenav>
 
-    <script type="text/javascript" src="bower/_bower.js"></script>
-    <script type="text/javascript" src="js/all.js"></script>
-	<!-- endbuild -->
-  </body>
+<div ng-view flex layout="column"></div>
+
+
+<script type="text/javascript" src="bower/_bower.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<!-- endbuild -->
+</body>
 </html>
