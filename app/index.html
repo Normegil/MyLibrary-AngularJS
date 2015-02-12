@@ -17,35 +17,30 @@
         <md-toolbar layout="row" layout-align="center center" class="mainLogo">
             <h1>My Library</h1>
         </md-toolbar>
-        <div layout="row">
+        <div layout="row" layout-padding>
             <input type="text" value="Autocomplete"/>
             <md-button>Search</md-button>
         </div>
-        <div>
-            <ul>
-                <li>
-                    <a>News</a>
-                </li>
-                <li>
-                    <a>Browse</a>
-                    <ul>
-                        <li>
-                            <a>BD</a>
-                        </li>
-                        <li>
-                            <a>Comics</a>
-                        </li>
-                        <li>
-                            <a>Manga</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+        <div layout="row" layout-align="center center" layout-padding>
+            <div layout-padding>
+                <md-button class="md-fab md-primary" aria-label="News">
+                    News
+                    <!--<md-icon md-font-icon=""></md-icon>-->
+                </md-button>
+            </div>
+            <div layout-padding>
+                <md-button class="md-fab md-primary" aria-label="Books">
+                    Books
+                    <!--<md-icon md-font-icon=""></md-icon>-->
+                </md-button>
+            </div>
         </div>
     </div>
-    <div layout="row" layout-align="space-around">
-        <md-button>Connect</md-button>
-        <md-button>inscription</md-button>
+    <div layout="column">
+        <div layout="row" layout-align="space-around" layout-padding>
+            <md-button>Connect</md-button>
+            <md-button>inscription</md-button>
+        </div>
     </div>
 </md-sidenav>
 
