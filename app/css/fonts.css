@@ -1,2 +1,37 @@
 
+@font-face {
+	font-family: ShadowsIntoLight;
+	src: url('../fonts/ShadowsIntoLight/ShadowsIntoLight.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+	font-family: marvel;
+	src: url('../fonts/marvel/Marvel-Regular.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+	font-family: lobster;
+	src: url('../fonts/lobster/Lobster.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+	font-family: stalemate;
+	src: url('../fonts/stalemate/Stalemate-Regular.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+	font-family: raleway;
+	src: url('../fonts/raleway/Raleway-Regular.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+	font-family: oswald;
+	src: url('../fonts/oswald/Oswald-Regular.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+	font-family: bevan;
+	src: url('../fonts/bevan/bevan.ttf'); /* IE9 Compat Modes */
+}
+
 /* ---> Do not delete this comment (Fonts) <--- */
