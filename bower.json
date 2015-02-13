@@ -11,8 +11,7 @@
     "angular-material": "*",
     "angular-ui-utils": "*",
     "angular-ui-router": "*",
-    "ng-grid": "*",
-    "font-awesome": "4.3.0"
+    "ng-grid": "*"
   },
   "devDependencies": {
     "angular-mocks": "*",

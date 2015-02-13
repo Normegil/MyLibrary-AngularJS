@@ -19,27 +19,27 @@
         </md-toolbar>
         <div layout="row" layout-padding>
             <input type="text" value="Autocomplete"/>
-            <md-button>Search</md-button>
+            <md-button class="md-fab" aria-label="Search">
+                <span class="fa fa-search"></span>
+            </md-button>
         </div>
-        <div layout="row" layout-align="center center" layout-padding>
-            <div layout-padding>
-                <md-button class="md-fab md-primary" aria-label="News">
-                    News
-                    <!--<md-icon md-font-icon=""></md-icon>-->
-                </md-button>
-            </div>
-            <div layout-padding>
-                <md-button class="md-fab md-primary" aria-label="Books">
-                    Books
-                    <!--<md-icon md-font-icon=""></md-icon>-->
-                </md-button>
-            </div>
+        <div layout="column" layout-align="center start" layout-padding flex>
+            <md-button class="button-text-medium" aria-label="Inscription" flex>
+                <span class="fa fa-newspaper-o"></span> News
+            </md-button>
+            <md-button class="button-text-medium" aria-label="Inscription" flex>
+                <span class="fa fa-book"></span> Books
+            </md-button>
         </div>
     </div>
     <div layout="column">
         <div layout="row" layout-align="space-around" layout-padding>
-            <md-button>Connect</md-button>
-            <md-button>inscription</md-button>
+            <md-button class="button-text-medium" aria-label="Inscription" flex>
+                <span class="fa fa-pencil"></span> Inscription
+            </md-button>
+            <md-button class="button-text-medium" aria-label="Connect" flex>
+                <span class="fa fa-sign-in"></span> Sign-In
+            </md-button>
         </div>
     </div>
 </md-sidenav>
