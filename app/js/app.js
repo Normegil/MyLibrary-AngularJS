@@ -4,7 +4,7 @@
 ==================================================================*/
 /*global angular*/
 
-var app = angular.module('myLibraryAngularJs', ["ngCookies", "ngResource", "ngSanitize", "ngRoute", "ngAnimate", "ui.utils", "ui.router", "ngGrid", "ngMaterial"]);
+var app = angular.module('myLibraryAngularJs', ["ngCookies", "ngResource", "ngSanitize", "ngRoute", "ngAnimate", "ui.utils", "ui.router", "ngGrid", "ngMaterial", "angucomplete-alt"]);
 
 
 app.config(['$routeProvider', '$locationProvider', '$httpProvider', function ($routeProvider, $locationProvider, $httpProvider) {
@@ -26,11 +26,11 @@ app.config(['$routeProvider', '$locationProvider', '$httpProvider', function ($r
 
 
 /*================================================================
-=>                  myLibraryAngularJs App Run()  
+=>                  myLibraryAngularJs App Run()
 ==================================================================*/
 
 app.run(['$rootScope', function ($rootScope) {
-	
+
 	'use strict';
 
 	console.log('Angular.js run() function...');

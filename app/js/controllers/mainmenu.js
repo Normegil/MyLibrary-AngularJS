@@ -10,12 +10,12 @@ app.controller('MainMenuCtrl', ['$scope', function ($scope) {
 
     $scope.selectedTag = null;
     $scope.tags = [
-        'Tag',
-        'Test',
-        'Jack',
-        'Jack in',
-        'Jack in the ',
-        'Jack in the Box'
+        {name:'Tag'},
+        {name:'Test'},
+        {name:'Jack'},
+        {name:'Jack in'},
+        {name:'Jack in the '},
+        {name:'Jack in the Box'}
     ];
 
 	console.log('Controller ===  MainMenuCtrl');
