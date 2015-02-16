@@ -13,17 +13,11 @@
 <body layout="row" ng-app="myLibraryAngularJs" class="mylibrary">
 <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2" layout="column" layout-align="space-between"
             md-is-locked-open="true">
-    <div>
+    <div ng-controller="MainMenuCtrl" flex>
         <md-toolbar layout="row" layout-align="center center" class="mainLogo">
             <h1>My Library</h1>
         </md-toolbar>
-        <div layout="row" layout-padding>
-            <input type="text" value="Autocomplete"/>
-            <md-button class="md-fab" aria-label="Search">
-                <span class="fa fa-search"></span>
-            </md-button>
-        </div>
-        <div layout="column" layout-align="center start" layout-padding flex>
+        <div class="mainMenu" layout="row" layout-align="center start" layout-padding flex>
             <md-button class="button-text-medium" aria-label="Inscription" flex>
                 <span class="fa fa-newspaper-o"></span> News
             </md-button>
@@ -31,11 +25,23 @@
                 <span class="fa fa-book"></span> Books
             </md-button>
         </div>
+        <div layout="row" layout-padding>
+            Autocomplete
+            <angucomplete-alt id="searchField"
+                              placeholder="Search"
+                               pause="100"
+                              selected-object="selectedTag"
+                              local-data="tags"
+                              title-field="name"
+                              minlength="1"
+                              input-class="form-control form-control-small">
+            </angucomplete-alt>
+        </div>
     </div>
-    <div layout="column">
+    <div class="mainMenuProfile" layout="column">
         <div layout="row" layout-align="space-around" layout-padding>
-            <md-button class="button-text-medium" aria-label="Inscription" flex>
-                <span class="fa fa-pencil"></span> Inscription
+            <md-button class="button-text-medium" aria-label="Register" flex>
+                <span class="fa fa-pencil"></span> Register
             </md-button>
             <md-button class="button-text-medium" aria-label="Connect" flex>
                 <span class="fa fa-sign-in"></span> Sign-In
