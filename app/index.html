@@ -19,11 +19,11 @@
         </md-toolbar>
         <div layout="row" layout-padding layout-margin>
             <div>
-                <angucomplete-alt id="searchField"
+                <angucomplete-alt id="search.searchField"
                                   placeholder="Search"
                                   pause="1"
-                                  selected-object="selectedTag"
-                                  local-data="tags"
+                                  selected-object="search.selectedTag"
+                                  local-data="search.tags"
                                   search-fields="name"
                                   title-field="name"
                                   minlength="1"
@@ -32,20 +32,20 @@
             </div>
         </div>
         <div class="mainMenu" layout="row" layout-align="center start" layout-padding flex>
-            <md-button class="button-text-medium" aria-label="Inscription" flex>
+            <md-button ng-href="#!/home" class="button-text-medium" aria-label="Inscription" flex>
                 <span class="fa fa-newspaper-o"></span> News
             </md-button>
-            <md-button class="button-text-medium" aria-label="Inscription" flex>
+            <md-button ng-href="#!/books" class="button-text-medium" aria-label="Inscription" flex>
                 <span class="fa fa-book"></span> Books
             </md-button>
         </div>
     </div>
     <div class="mainMenuProfile" layout="column">
         <div layout="row" layout-align="space-around" layout-padding>
-            <md-button class="button-text-medium" aria-label="Register" flex>
+            <md-button ng-click="showAdvanced($event)" class="button-text-medium" aria-label="Register" flex>
                 <span class="fa fa-pencil"></span> Register
             </md-button>
-            <md-button class="button-text-medium" aria-label="Connect" flex>
+            <md-button ng-click="showAdvanced($event)" class="button-text-medium" aria-label="Connect" flex>
                 <span class="fa fa-sign-in"></span> Sign-In
             </md-button>
         </div>
