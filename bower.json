@@ -6,7 +6,6 @@
     "angular-resource": "*",
     "angular-cookies": "*",
     "angular-sanitize": "*",
-    "angular-route": "*",
     "angular-animate": "*",
     "angular-material": "*",
     "angular-ui-utils": "*",

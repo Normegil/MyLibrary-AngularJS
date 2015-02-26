@@ -32,10 +32,10 @@
             </div>
         </div>
         <div class="mainMenu" layout="row" layout-align="center start" layout-padding flex>
-            <md-button ng-href="#!/home" class="button-text-medium" aria-label="Inscription" flex>
+            <md-button ui-sref="news" class="button-text-medium" aria-label="Inscription" flex>
                 <span class="fa fa-newspaper-o"></span> News
             </md-button>
-            <md-button ng-href="#!/books" class="button-text-medium" aria-label="Inscription" flex>
+            <md-button ui-sref="books" class="button-text-medium" aria-label="Inscription" flex>
                 <span class="fa fa-book"></span> Books
             </md-button>
         </div>
@@ -52,7 +52,7 @@
     </div>
 </md-sidenav>
 
-<div ng-view flex layout="column"></div>
+<div ui-view flex layout="column"></div>
 
 
 <script type="text/javascript" src="bower/_bower.js"></script>

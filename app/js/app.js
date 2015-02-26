@@ -1,45 +1,41 @@
-
 /*================================================================
-=>                  App = myLibraryAngularJs
-==================================================================*/
+ =>                  App = myLibraryAngularJs
+ ==================================================================*/
 /*global angular*/
 
-var app = angular.module('myLibraryAngularJs', ["ngCookies", "ngResource", "ngSanitize", "ngRoute", "ngAnimate", "ui.utils", "ui.router", "ngGrid", "ngMaterial", "angucomplete-alt"]);
+var app = angular.module('myLibraryAngularJs', ["ngCookies", "ngResource", "ngSanitize", "ngAnimate", "ui.utils", "ui.router", "ngGrid", "ngMaterial", "angucomplete-alt"]);
 
 
-app.config(['$routeProvider', '$locationProvider', '$httpProvider', function ($routeProvider, $locationProvider, $httpProvider) {
-	'use strict';
+app.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function ($stateProvider, $urlRouterProvider, $httpProvider) {
+    'use strict';
 
-	$routeProvider
-		.when('/home', {
-			templateUrl: 'templates/home.html'
-		})
-		.when("/books", {
-			templateUrl: "templates/books.html"
-		})
-		.otherwise({
-			redirectTo: '/home'
-		});
+    $urlRouterProvider.otherwise('/news');
 
-	$locationProvider.hashPrefix('!');
+    $stateProvider
+        .state('news', {
+            url: '/news',
+            templateUrl: 'templates/news.html'
+        })
+        .state('books', {
+            url: '/books',
+            templateUrl: 'templates/books.html'
+        });
 
-	// This is required for Browser Sync to work poperly
-	$httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+    // This is required for Browser Sync to work poperly
+    $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 }]);
 
 
 /*================================================================
-=>                  myLibraryAngularJs App Run()
-==================================================================*/
+ =>                  myLibraryAngularJs App Run()
+ ==================================================================*/
 
 app.run(['$rootScope', function ($rootScope) {
 
-	'use strict';
+    'use strict';
 
-	console.log('Angular.js run() function...');
+    console.log('Angular.js run() function...');
 }]);
-
-
 
 
 /* ---> Do not delete this comment (Values) <--- */
